@@ -35,11 +35,12 @@
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="NBh-pe-M6H"/>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYZ-Ub-QU8"/>
+                                    <segue destination="CGr-9g-3bH" kind="presentation" id="g4r-Vh-iqX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Vdw-9A-Lwz">
-                                <rect key="frame" x="133" y="512" width="144" height="87"/>
+                                <rect key="frame" x="135" y="516" width="144" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="単語一覧" cornerStyle="small">
@@ -50,16 +51,14 @@
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="tI9-Ua-SSK" kind="presentation" id="pOG-54-iqx"/>
+                                    <action selector="backWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTt-P7-0tR"/>
+                                    <segue destination="tI9-Ua-SSK" kind="presentation" id="WXa-RR-yFu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <segue destination="CGr-9g-3bH" kind="presentation" identifier="toQuestionview" modalPresentationStyle="fullScreen" id="nwW-nV-yae"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +164,7 @@
                                     <color key="baseForegroundColor" red="1" green="1" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Hij-nw-ZXs" kind="unwind" unwindAction="backWithSender:" id="kF1-C9-9es"/>
+                                    <segue destination="Hij-nw-ZXs" kind="unwind" unwindAction="backWithSender:" id="Avv-tE-JeV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -260,13 +259,13 @@
                     <navigationItem key="navigationItem" title="Title" id="Qmv-aW-jKo">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="5Vh-0l-ZYw">
                             <connections>
-                                <action selector="saveWord" destination="hzr-iN-LPv" id="Rik-ry-lz0"/>
+                                <action selector="saveWord" destination="hzr-iN-LPv" id="s1J-wS-Ckb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="englishTextField" destination="azg-qw-cR6" id="NMN-X5-c9B"/>
-                        <outlet property="japaneseTextField" destination="CQk-Uh-7PE" id="lQ7-ZM-cqa"/>
+                        <outlet property="englishTextField" destination="azg-qw-cR6" id="ewL-MM-OSl"/>
+                        <outlet property="japaneseTextField" destination="CQk-Uh-7PE" id="bK1-7p-mPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1k2-lm-d1s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
